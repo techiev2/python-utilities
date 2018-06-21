@@ -73,7 +73,9 @@ def protect_types(arguments_info):
             original_map = {}
             original_map.update(mix_data)
 
+
             valid_arguments_info.update(mix_data)
+            valid_arguments_info.update(arguments_info)
 
             if not valid_arguments_info:
                 raise SystemError(types_data_error.format(
